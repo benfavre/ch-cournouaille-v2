@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "app-v2",
-    "slug": "app-v2",
+    "slug": "ch-cournouaille",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,13 +16,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.omedit.cornouaille"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.omedit.cornouaille"
     },
     "web": {
       "bundler": "metro",
@@ -34,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "42bf5e2b-4eaa-47d7-955a-24c29b0eea58"
+      }
+    },
+    "owner": "webdesign29"
   }
 }
